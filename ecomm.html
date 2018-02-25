@@ -42,7 +42,12 @@ height:400px;
 	background-color:black;
 	}
 	
+	.contact
+	{
 	
+	padding-left:100px;
+	padding-top:40px;
+	}
 	
 	.blcp
 	
@@ -62,11 +67,6 @@ height:400px;
 	height:300px;
 	
 	}
-	#footer {
-       width:200px; 
-       height:200px; 
-     
- }
  .adjust-card
  {
  
@@ -76,6 +76,18 @@ height:400px;
  border:2px black;
  padding:7px;
  border-style:groove;
+ }
+ #footer{
+ 
+ background-image:url(footer.jpg);
+ 
+ 
+ }
+ .form-group
+ 
+ {
+ padding-top:20px;
+ 
  }
 	</style>
 	
@@ -240,14 +252,35 @@ height:400px;
   </div>
 </div>
 	   <div id="footer">
-	   			
-	   		<p><a href="#"><img id="icon" src="footer.jpg"></a></p>
-
-	   		</div>
+	   <div class="contact">
+	   <div class="row">
+	   <div class="col-md-5">
+       Questions? Go ahead.
+	   
+	   
+	   <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleTextarea">Please write your query.</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+</div>	   
 	   		
-	   	</div>
-	   </div>
-
+             </div>
+	   		
+	  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
