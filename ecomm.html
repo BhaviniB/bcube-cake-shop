@@ -18,11 +18,27 @@
   background-size: cover;
   color: white;
   text-align:center;
-height:400px;
-  }
+height:400px;  }
+	
+	.navbar-bg
+	
+	
+	{
+	
+	background-color:#E74A69;
+	margin-bottom:30px;
+	
+	}
 	
 	.navbar-light .navbar-brand .navbar-collapse{
     color: pink;
+	 
+  }
+.jumbo-text
+
+{
+color:black;
+
 }
 	.back-text{
  color:black;
@@ -87,6 +103,7 @@ height:550px;
 margin-top:30px;
  
  
+ 
  }
  .form-group
  
@@ -106,11 +123,30 @@ margin-top:30px;
  padding-top:20px;
  display:inline-block;
  }
+ 
+ .card-2
+ {
+ 
+ }
+ .align-self-center {
+	margin-top: 90px;
+ }
+ .align-self-end {
+	margin-top: 240px;
+ }
+ 
+ .align-self-start {
+	margin-top: 20px;
+ }
+ .btn-outline:hover {
+	color: #000 !important;
+	transition: all .3s;
+ }
 	</style>
 	
   </head>
   <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-inverse">
+	<nav class=" navbar-bg navbar navbar-expand-lg navbar-light bg-inverse">
   <a class=" navbar-brand" href="#">BCUBE <i class="fas fa-birthday-cake"></i></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -141,14 +177,14 @@ margin-top:30px;
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="eg. Red Velvet" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
 
 <div class="jumbotron">
-  <h1 class=" back-text display-4">Bonjour from Bcube's!</h1>
-  <p class=" back-text lead">A little bakery inspired by the Parisian way of life!</p>
+  <h1 class="jumbo-text back-text display-4">Bonjour from Bcube's!</h1>
+  <p class=" jumbo-text back-text lead">A little bakery inspired by the Parisian way of life!</p>
   <hr class="my-4">
   <p class="blcp" class="back-text">breakfast  <i class="fas fa-coffee"></i> lunch  <i class="fas fa-utensils"></i>  cakes & pastries  <i class="fab fa-gratipay"></i>
 
@@ -164,14 +200,15 @@ margin-top:30px;
 </div>
 
 <div class="card-group">
-  <div class="adjust-card card">
+<div class="row">
+  <div class="adjust-card card col align-self-start">
     <img id="cake" class="card-img-top" src="Capture.png" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Death By Chocolate $20</h4>
       <p class="card-text">Four layers of rich chocolate cake frosted with decadent chocolate buttercream and topped with melted chocolat.</p>
       </div>
   </div>
-  <div class="adjust-card card">
+  <div class="adjust-card card col align-self-center">
     <img class="card-img-top" src="Capture1.png" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Chocolate Vanilla Strawberry Crumble $40</h4>
@@ -179,7 +216,7 @@ margin-top:30px;
      </div>
   </div>
 
-  <div class="adjust-card card">
+  <div class="adjust-card card col align-self-end">
     <img class="card-img-top" src="Capture2.png" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Chocolate Mousse $20</h4>
@@ -187,22 +224,23 @@ margin-top:30px;
        </div>
   </div>
 </div>
+</div>
 <div class="card-group">
-  <div class="adjust-card card">
+  <div class="adjust-card card align-self-end">
     <img class="card-img-top" id="waffle1" src="waffle1.png" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Honey Butter Waffles $5</h4>
       <p class="card-text">Waffles infested with honey and butter. Give your tastebuds a treat with these.</p>
       </div>
   </div>
-  <div class="adjust-card card">
+  <div class="adjust-card card align-self-center">
     <img class="card-img-top" src="waffle2.png" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Vanilla Bean and Blueberry Waffles $9</h4>
       <p class="card-text"> Vanilla creme whipped waffles with blueberries on the top.</p>
       </div>
   </div>
-  <div class="adjust-card card">
+  <div class="adjust-card card align-self-start">
     <img class="card-img-top" src="waffle3.png" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Plain Blueberry Waffles $4</h4>
@@ -211,7 +249,7 @@ margin-top:30px;
   </div>
 </div>
 <div class="card-group">
-  <div class="adjust-card card">
+  <div class="adjust-card card align-self-start">
     <img class="card-img-top" id="shake1" src="shake1.png" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Bcube's Special Smoothies $13</h4>
@@ -219,7 +257,7 @@ margin-top:30px;
      
     </div>
   </div>
-  <div class="adjust-card card">
+  <div class="adjust-card card align-self-center">
     <img class="card-img-top" src="shake2.png" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Creme Shakes $33</h4>
@@ -227,7 +265,7 @@ margin-top:30px;
      
     </div>
   </div>
-  <div class="adjust-card card">
+  <div class="adjust-card card align-self-end">
     <img class="card-img-top" src="shake3.png" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Milk Shakes $10</h4>
@@ -236,21 +274,21 @@ margin-top:30px;
   </div>
 </div>
 <div class="card-group">
-  <div class="adjust-card card">
+  <div class="adjust-card card align-self-end">
     <img class="card-img-top" id="coffee1" src="coffee1.jpg" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Americano $2</h4>
       <p class="card-text">Prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from traditionally brewed coffee.</p>
      </div>
   </div>
-  <div class="adjust-card card">
+  <div class="adjust-card card align-self-center">
     <img class="card-img-top" src="coffee2.jpg" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Cappucino $4</h4>
       <p class="card-text"> Prepared with double espresso, and steamed milk foam. Variations of the drink involve the use of cream instead of milk, and flavoring with cinnamon or chocolate powder. </p>
      </div>
   </div>
-  <div class="adjust-card card">
+  <div class="adjust-card card align-self-start">
     <img class="card-img-top" src="coffee3.jpg" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Mocha $8</h4>
@@ -285,8 +323,8 @@ margin-top:30px;
 
 <div class="details">
 	  
-	   <div class="col-md-6">
-       <strong>Details</strong>
+	   <div class="col-md-12">
+       <strong>Details</strong> <br>
 	   	 <p id="det">  <i class="fas fa-map-marker"></i>  15, Yemen Road, Yemen</p>
 	   	<p><i class="fas fa-envelope-square"></i> lassiebhavini@gmail.com</p>	
              
